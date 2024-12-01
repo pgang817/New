@@ -1,0 +1,90 @@
+.careers {
+    background: linear-gradient(180deg, #264bf32a 0%, #bea0db17 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.careers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.careers h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.careers p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-listings {
+    display: flex;
+    justify-content: center; /* Centering job cards */
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px; /* Optional: set max width to avoid too wide container */
+    margin: 0 auto; /* Center the container itself */
+}
+
+.job-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Adjusting width for centering */
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 450px; /* Ensuring the cards are not too wide */
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.job-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the text color same as the surrounding text */
+}
+
+a:hover {
+    text-decoration: none; /* Ensures no underline on hover as well */
+}
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #764ba2;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #5c3b84;
+}
+
+@media (max-width: 768px) {
+    .job-card {
+        width: 100%;
+    }
+}

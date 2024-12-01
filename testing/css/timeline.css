@@ -1,0 +1,188 @@
+
+
+
+/* General Section Styling */
+.timeline-section {
+    padding: 80px 5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Section Heading */
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.heading-line {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff758c, #6c63ff);
+    margin: 0 auto 10px auto;
+    border-radius: 2px;
+}
+
+.timeline-section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.timeline-section h2 span {
+    font-weight: 800;
+    color: #000;
+}
+
+/* Timeline Styling */
+.timeline {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Row Styling */
+/* Top Row Styling (Cards aligned to the left) */
+.timeline-row {
+    display: flex;
+    justify-content: flex-start;
+    /* Aligns items to the left */
+    gap: 200px;
+    /* Adds space between the cards */
+    position: relative;
+    width: 100%;
+    padding-left: 5%;
+    /* Ensure cards are not too close to the edge */
+}
+
+/* Bottom Row Styling (Cards aligned to the right) */
+.timeline-row2 {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    gap: 200px;
+    /* Adds space between the cards */
+    position: relative;
+    width: 100%;
+    padding-right: 5%;
+    /* Ensure cards are not too close to the edge */
+}
+
+
+/* Top Row Cards (Align to the top) */
+.top-card {
+    transform: translateY(-20px);
+    /* Shift top cards upward */
+}
+
+/* Bottom Row Cards (Align to the bottom) */
+.bottom-card {
+    transform: translateY(20px);
+    /* Shift bottom cards downward */
+}
+
+/* Timeline Card Styling */
+.timeline-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 280px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Horizontal Line Styling */
+.timeline-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ff758c;
+    position: relative;
+    margin: 30px 0;
+}
+
+/* Vertical Line (zigzag effect) */
+.timeline-line {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 0px;
+    background-color: #ff758c;
+    transform: translateX(-50%);
+}
+
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #ff758c;
+    top: -50px;
+    /* Adjust this value to move the line up or down */
+}
+
+/* Positioning Vertical Lines */
+.v1 {
+    left: 20%;
+    /* Adjust this based on the card position */
+}
+
+.v2 {
+    left: 50%;
+}
+
+.v3 {
+    left: 80%;
+}
+
+
+
+.trophy {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/images/trophy.png');
+    /* Replace with your actual trophy image path */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .timeline-row {
+        flex-direction: column;
+    }
+
+    .vertical-line {
+        display: none;
+        /* Hide vertical lines on mobile */
+    }
+
+    .trophy {
+        right: 10px;
+        bottom: -10px;
+    }
+}

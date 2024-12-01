@@ -1,0 +1,94 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #264bf32a 0%, #764ba211 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    height: 800px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 20px 0;
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    /* Ensures content takes available space */
+    max-width: 900px;
+    margin-right: 130px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+    color: #6c63ff;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 36px;
+    color: #4A5568;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #2f6bff;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1f5ae6;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    /* Ensures image takes remaining space */
+    text-align: right;
+    /* Aligns the image to the right */
+}
+
+.hero-image img {
+    width: 550px;
+    /* Set image width */
+    max-width: 100%;
+    /* Ensures responsiveness */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        /* Stack vertically on smaller screens */
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+        /* Adds space between text and image */
+        text-align: center;
+    }
+}

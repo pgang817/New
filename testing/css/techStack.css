@@ -1,0 +1,100 @@
+
+
+/* Tech Stack */
+/* General Section Styling */
+.tech-stack {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Section Heading */
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.heading-line {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff758c, #6c63ff);
+    margin: 0 auto 10px auto;
+    border-radius: 2px;
+}
+
+.tech-stack h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.tech-stack h2 span {
+    font-weight: 800;
+    color: #000;
+}
+
+/* Tech Categories (Tabs) */
+.tech-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tech-categories span {
+    margin: 0 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.tech-categories .active {
+    font-weight: 600;
+    color: #6c63ff;
+}
+
+.tech-categories .active::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff758c, #6c63ff);
+    margin: 5px auto 0 auto;
+    border-radius: 1px;
+}
+
+/* Tech Logos (Grid) */
+.tech-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 logos per row */
+    gap: 40px;
+    justify-items: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Ensures the entire grid is centered */
+    text-align: center;
+    /* Center text/logo in each grid cell */
+}
+
+.tech-logos img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.tech-logos img:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .tech-logos {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 logos per row on mobile */
+    }
+}

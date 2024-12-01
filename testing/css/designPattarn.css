@@ -1,0 +1,236 @@
+/* our design pattern */
+/* General Styles */
+.design-approach {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Section Heading Styles */
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.heading-line {
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff758c, #6c63ff);
+    margin: 0 auto 10px auto;
+    border-radius: 2px;
+}
+
+.design-approach h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.design-approach h2 span {
+    font-weight: 800;
+    color: #000;
+}
+
+/* Grid Layout (for cards, keeping the previous grid design) */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        /* One column on smaller screens */
+    }
+}
+
+.design-approach {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.design-approach h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.design-approach h2 span {
+    color: #6c63ff;
+}
+
+/* Grid Layout */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 40px;
+    /* Spacing between cards */
+    justify-items: center;
+}
+
+/* Card Styles */
+.approach-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    max-width: 550px;
+    transition: transform 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-10px);
+    /* Hover effect for card */
+}
+
+.approach-card .icon {
+    margin-bottom: 20px;
+}
+
+.approach-card .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.approach-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.approach-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Icon Container with Gradient Background */
+.approach-card .icon {
+    background: linear-gradient(135deg, #6c63ff, #ff6584);
+    /* Example gradient */
+    padding: 15px;
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+/* Variations for Different Gradient Backgrounds */
+.icon-ux {
+    background: linear-gradient(135deg, #000000, #000000);
+    /* Example gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+.icon-dev-understanding {
+    background: linear-gradient(135deg, #63a4ff, #83eaf1);
+    /* Blue gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+.icon-experience {
+    background: linear-gradient(135deg, #ff6584, #f4a261);
+    /* Pink to orange gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+.icon-security {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    /* Cyan to blue gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+.icon-code-review {
+    background: linear-gradient(135deg, #FFEF5E, #F7936F);
+    /* Soft purple gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+.icon-qa-testing {
+    background: linear-gradient(135deg, #F76680, #57007B);
+    /* Pink to purple gradient */
+    border-radius: 12px;
+    /* Rounded corners */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        /* One column on smaller screens */
+    }
+}

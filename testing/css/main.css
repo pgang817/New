@@ -1,0 +1,42 @@
+@import url('footer.css');
+@import url('timeline.css');
+@import url('techStack.css');
+@import url('designPattarn.css');
+@import url('hero.css');
+@import url('services.css');
+@import url('caseStudies.css');
+@import url('build.css');
+@import url('about.css');
+@import url('navbar.css');
+@import url('career.css');
+@import url('contactUs.css');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.contact-btn a {
+    background: linear-gradient(90deg, #6a00f4, #f42f95); /* Gradient background for the button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-btn a:hover {
+    background: linear-gradient(90deg, #3f00ff 0%, #6c63ff 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
